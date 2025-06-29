@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2025 WhiteTowerGames")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Event system for Godot (.NET 9.0) and Unity (.NET Standard 2.1).")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6afef77b65c9f8ce763bdc310a05a097eca12fd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f18e1c1b977bb9d73d2c8fbcbf7c02d4daa8673")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventCoalTrain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventCoalTrain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
