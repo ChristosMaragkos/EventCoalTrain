@@ -1,4 +1,5 @@
-﻿using EventCoalTrain.EventHandling;
+﻿using System;
+using EventCoalTrain.EventHandling;
 
 namespace EventCoalTrain.EventStructure;
 

@@ -1,4 +1,6 @@
-﻿using EventCoalTrain.EventSource;
+﻿using System;
+using System.Collections.Generic;
+using EventCoalTrain.EventSource;
 using EventCoalTrain.EventStructure;
 
 namespace EventCoalTrain.EventHandling;
@@ -16,7 +18,7 @@ public static class EventBus
     /// <summary>
     /// Contains all registered event keys for reference.
     /// </summary>
-    public static readonly HashSet<string> RegisteredKeys = [];
+    public static readonly HashSet<string> RegisteredKeys = new();
 
     /// <summary>
     /// Subscribes a handler to a packet event with a specific payload type.
@@ -33,7 +35,7 @@ public static class EventBus
     {
         if (!Subscribers.TryGetValue(packet.Key, out var list))
         {
-            list = [];
+            list = new List<Delegate>();
             Subscribers[packet.Key] = list;
         }
         
@@ -54,7 +56,7 @@ public static class EventBus
     {
         if (!Subscribers.TryGetValue(notification.Key, out var list))
         {
-            list = [];
+            list = new List<Delegate>();
             Subscribers[notification.Key] = list;
         }
         
