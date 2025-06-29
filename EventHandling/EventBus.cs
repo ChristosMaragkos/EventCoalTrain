@@ -3,10 +3,19 @@ using EventCoalTrain.EventStructure;
 
 namespace EventCoalTrain.EventHandling;
 
+/// <summary>
+/// Provides a static event bus for subscribing, unsubscribing, and publishing events.
+/// </summary>
 public static class EventBus
 {
+    /// <summary>
+    /// Stores event subscribers mapped by their event key.
+    /// </summary>
     private static readonly Dictionary<IEventKey, List<Delegate>> Subscribers = new();
     
+    /// <summary>
+    /// Contains all registered event keys for reference.
+    /// </summary>
     public static readonly HashSet<string> RegisteredKeys = [];
 
     /// <summary>
