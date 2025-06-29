@@ -39,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/EventHandling/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/coding projects/csharp/EventCoalTrain/EventHandling/EventBus.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EventStructure/EventKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net/.NETFramework,Version=v0.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -54,29 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.EventCoalTrain.executor": "Run",
-    ".NET Project.EventOasth.Tests.executor": "Run",
-    ".NET Project.EventOasth.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "c448087c-e500-4218-b54b-4c012e25b85d.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.EventCoalTrain.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.EventOasth.Tests.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.EventOasth.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;c448087c-e500-4218-b54b-4c012e25b85d.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.EventCoalTrain">
+}</component>
+  <component name="RunManager">
     <configuration name="EventCoalTrain" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -115,7 +116,7 @@
       <workItem from="1751003019298" duration="213000" />
       <workItem from="1751111433078" duration="703000" />
       <workItem from="1751188510779" duration="3440000" />
-      <workItem from="1751208750631" duration="4391000" />
+      <workItem from="1751208750631" duration="4606000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
@@ -149,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751213260148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add initial project configuration files and XML documentation">
+      <option name="closed" value="true" />
+      <created>1751213781405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751213781405</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +183,8 @@
     <MESSAGE value="Update assembly informational version and remove output type from project file" />
     <MESSAGE value="Add XML documentation comments for event bus and related classes" />
     <MESSAGE value="Refactor EventBus to use collection initializers and update assembly information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor EventBus to use collection initializers and update assembly information" />
+    <MESSAGE value="Add initial project configuration files and XML documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project configuration files and XML documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
