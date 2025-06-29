@@ -12,3 +12,4 @@ D:\coding projects\csharp\EventCoalTrain\obj\Debug\net9.0\refint\EventCoalTrain.
 D:\coding projects\csharp\EventCoalTrain\obj\Debug\net9.0\EventCoalTrain.pdb
 D:\coding projects\csharp\EventCoalTrain\obj\Debug\net9.0\EventCoalTrain.genruntimeconfig.cache
 D:\coding projects\csharp\EventCoalTrain\obj\Debug\net9.0\ref\EventCoalTrain.dll
+D:\coding projects\csharp\EventCoalTrain\obj\Debug\net9.0\EventCoalTrain.sourcelink.json
