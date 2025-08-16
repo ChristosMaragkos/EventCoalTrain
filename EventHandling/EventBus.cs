@@ -1,10 +1,10 @@
-﻿using System;
+﻿#define EVENTCOALTRAIN
+using System;
 using System.Collections.Generic;
 using EventCoalTrain.EventSource;
 using EventCoalTrain.EventStructure;
 
 namespace EventCoalTrain.EventHandling;
-
 /// <summary>
 /// Provides a static event bus for subscribing, unsubscribing, and publishing events.
 /// </summary>

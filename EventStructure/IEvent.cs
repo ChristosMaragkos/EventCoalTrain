@@ -1,4 +1,5 @@
-﻿namespace EventCoalTrain.EventStructure;
+﻿#define EVENTCOALTRAIN
+namespace EventCoalTrain.EventStructure;
 
 /// <summary>
 /// Represents a generic event with a name.

@@ -1,4 +1,5 @@
-﻿using EventCoalTrain.EventStructure;
+﻿#define EVENTCOALTRAIN
+using EventCoalTrain.EventStructure;
 
 namespace EventCoalTrain.EventSource;
 

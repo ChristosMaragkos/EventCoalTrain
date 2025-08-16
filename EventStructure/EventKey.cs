@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define EVENTCOALTRAIN
+using System;
 using EventCoalTrain.EventHandling;
 
 namespace EventCoalTrain.EventStructure;
@@ -60,7 +61,7 @@ public sealed class EventKey<TPayload> : IEventKey
     /// </summary>
     /// <param name="obj">The object to compare with the current event key.</param>
     /// <returns>True if the specified object is equal to the current event key; otherwise, false.</returns>
-    public override bool Equals(object? obj)
+    public override bool Equals(object obj)
         => obj is EventKey<TPayload> other && other.Name == Name;
 
     /// <summary>
@@ -76,13 +77,13 @@ public sealed class EventKey<TPayload> : IEventKey
     /// Clears the event key registry for testing purposes.
     /// Only available in DEBUG builds.
     /// </summary>
+    #if DEBUG
     public static void ClearRegistryForTesting()
     {
-        #if DEBUG
             lock (EventBus.RegisteredKeys)
             {
                 EventBus.RegisteredKeys.Clear();
             }
-        #endif
     }
+    #endif
 }

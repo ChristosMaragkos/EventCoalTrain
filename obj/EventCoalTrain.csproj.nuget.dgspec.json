@@ -1,33 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\coding projects\\csharp\\EventCoalTrain\\EventCoalTrain.csproj": {}
+    "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\EventCoalTrain.csproj": {}
   },
   "projects": {
-    "D:\\coding projects\\csharp\\EventCoalTrain\\EventCoalTrain.csproj": {
+    "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\EventCoalTrain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\coding projects\\csharp\\EventCoalTrain\\EventCoalTrain.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\EventCoalTrain.csproj",
         "projectName": "EventCoalTrain",
-        "projectPath": "D:\\coding projects\\csharp\\EventCoalTrain\\EventCoalTrain.csproj",
-        "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-        "outputPath": "D:\\coding projects\\csharp\\EventCoalTrain\\obj\\",
+        "projectPath": "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\EventCoalTrain.csproj",
+        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0",
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
         },
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
@@ -91,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

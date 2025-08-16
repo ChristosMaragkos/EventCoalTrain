@@ -1,4 +1,5 @@
-﻿namespace EventCoalTrain.EventStructure;
+﻿#define EVENTCOALTRAIN
+namespace EventCoalTrain.EventStructure;
 
 /// <summary>
 /// Represents a type with a single value, similar to <c>void</c> but as a struct.

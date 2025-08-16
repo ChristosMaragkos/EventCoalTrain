@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = EventCoalTrain
-build_property.ProjectDir = D:\coding projects\csharp\EventCoalTrain\
+build_property.ProjectDir = C:\Users\chris\RiderProjects\EventCoalTrain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
