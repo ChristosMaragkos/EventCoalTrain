@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EventCoalTrain</id>
+    <version>1.0.0</version>
+    <authors>Christos Maragkos</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/ChristosMaragkos/EventCoalTrain</projectUrl>
+    <description>Event system for Godot (.NET 9.0) and Unity (.NET Standard 2.1).</description>
+    <copyright>Copyright © 2025 Christos Maragkos</copyright>
+    <repository type="git" url="https://github.com/ChristosMaragkos/EventCoalTrain" commit="37960c4c3c63e511f5f642c5c3e1db2e64d50cfd" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\chris\RiderProjects\EventCoalTrain\bin\Release\net8.0\EventCoalTrain.pdb" target="lib\net8.0\EventCoalTrain.pdb" />
+    <file src="C:\Users\chris\RiderProjects\EventCoalTrain\bin\Release\netstandard2.1\EventCoalTrain.pdb" target="lib\netstandard2.1\EventCoalTrain.pdb" />
+  </files>
+</package>

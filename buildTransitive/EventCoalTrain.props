@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);EVENTCOALTRAIN</DefineConstants>
+  </PropertyGroup>
+</Project>
+

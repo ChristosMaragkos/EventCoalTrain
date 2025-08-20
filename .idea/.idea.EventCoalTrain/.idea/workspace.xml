@@ -10,24 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core/EventCoalTrain.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/EventHandling/DefaultEventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/EventHandling/EventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/EventHandling/IEventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildTransitive/EventCoalTrain.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventHandling/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventHandling/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventSource/Notification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventSource/Notification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventSource/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventSource/Packet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventStructure/EventKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventStructure/EventKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventStructure/IEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventStructure/IEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventStructure/IEventKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventStructure/IEventKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventStructure/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EventStructure/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventCoalTrain.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventCoalTrain.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EventCoalTrain.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventHandling/EventBus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventSource/Notification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventSource/Notification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventSource/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventSource/Packet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStructure/EventKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventStructure/EventKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStructure/IEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventStructure/IEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStructure/IEventKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventStructure/IEventKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStructure/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventStructure/Unit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/EventCoalTrain.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/EventCoalTrain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/EventCoalTrain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/EventCoalTrain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/EventCoalTrain.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
@@ -51,26 +54,28 @@
     &quot;assignee&quot;: &quot;WhiteTowerGames&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ChristosMaragkos/EventCoalTrain.git",
-    "accountId": "f8291ec5-d5d1-42a3-abf1-4f56f29a7fb1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ChristosMaragkos/EventCoalTrain.git&quot;,
+    &quot;accountId&quot;: &quot;f8291ec5-d5d1-42a3-abf1-4f56f29a7fb1&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/0f5961becdfc473a9bfd6b5cee3a96582400/f2/a87be252/02000008pdb3Low.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../EventCoalTrain.Tests/EventBusTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EventHandling/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EventStructure/EventKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventHandling/DefaultEventBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventHandling/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventHandling/IEventBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventSource/Notification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventSource/Packet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventStructure/EventKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventStructure/IEventKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/EventStructure/Unit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net/.NETFramework,Version=v0.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/coding projects/csharp/EventCoalTrain/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/coding projects/csharp/EventCoalTrain/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -81,28 +86,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.EventCoalTrain.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.EventOasth.Tests.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.EventOasth.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;c448087c-e500-4218-b54b-4c012e25b85d.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.EventCoalTrain.executor": "Run",
+    ".NET Project.EventOasth.Tests.executor": "Run",
+    ".NET Project.EventOasth.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "c448087c-e500-4218-b54b-4c012e25b85d.executor": "Debug",
+    "git-widget-placeholder": "move-csproj",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="EventCoalTrain" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -143,7 +149,8 @@
       <workItem from="1751111433078" duration="703000" />
       <workItem from="1751188510779" duration="3440000" />
       <workItem from="1751208750631" duration="4606000" />
-      <workItem from="1755372488263" duration="508000" />
+      <workItem from="1755372488263" duration="831000" />
+      <workItem from="1755629387160" duration="7000000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
