@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventCoalTrain</name>
+    </assembly>
+    <members>
+        <member name="T:EventCoalTrain.EventHandling.EventBus">
+            <summary>
+            Static wrapper over a thread-safe event bus implementation.
+            </summary>
+        </member>
+        <member name="F:EventCoalTrain.EventHandling.EventBus.RegisteredKeys">
+            <summary>
+            Contains all registered event key names (used by EventKey.Of for uniqueness).
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventHandling.EventBus.Instance">
+            <summary>
+            Access the underlying event bus instance (supports IDisposable subscriptions).
+            </summary>
+        </member>
+        <member name="M:EventCoalTrain.EventHandling.EventBus.Configure(EventCoalTrain.EventHandling.IEventBus)">
+            <summary>
+            Replace the underlying bus implementation.
+            </summary>
+        </member>
+        <member name="E:EventCoalTrain.EventHandling.EventBus.OnPublishError">
+            <summary>
+            Raised when a subscriber throws during publish.
+            </summary>
+        </member>
+        <member name="T:EventCoalTrain.EventSource.Notification">
+            <summary>
+            Represents a notification event with a specific key.
+            Notifications are used to signal events without requiring a payload.
+            They can be used for simple signaling purposes,
+            such as indicating that an action has occurred, like a button press.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventSource.Notification.Key">
+            <summary>
+            Gets the event key associated with this notification.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventSource.Notification.Name">
+            <summary>
+            Gets the name of the event from the key.
+            </summary>
+        </member>
+        <member name="M:EventCoalTrain.EventSource.Notification.#ctor(EventCoalTrain.EventStructure.EventKey{EventCoalTrain.EventStructure.Unit})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EventCoalTrain.EventSource.Notification"/> class with the specified event key.
+            </summary>
+            <param name="key">The event key for this notification.</param>
+        </member>
+        <member name="T:EventCoalTrain.EventSource.Packet`1">
+            <summary>
+            Represents a packet containing an event key and its associated payload.
+            Packets are used to notify subscribers about events while transferring data.
+            They can be used to send data between different parts of the application,
+            like a player scoring points with the payload being the score increase.
+            </summary>
+            <typeparam name="TPayload">The type of the payload.</typeparam>
+        </member>
+        <member name="P:EventCoalTrain.EventSource.Packet`1.Key">
+            <summary>
+            Gets the event key associated with this packet.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventSource.Packet`1.Payload">
+            <summary>
+            Gets the payload carried by this packet.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventSource.Packet`1.Name">
+            <summary>
+            Gets the name of the event from the key.
+            </summary>
+        </member>
+        <member name="M:EventCoalTrain.EventSource.Packet`1.#ctor(EventCoalTrain.EventStructure.EventKey{`0},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EventCoalTrain.EventSource.Packet`1"/> class.
+            </summary>
+            <param name="key">The event key.</param>
+            <param name="payload">The payload to associate with the key.</param>
+        </member>
+        <member name="T:EventCoalTrain.EventStructure.EventKey`1">
+            <summary>
+            Represents a strongly-typed event key for use with the event bus.
+            Ensures unique registration of event keys by name.
+            Event keys associated with a packet must carry a payload with a specific type,
+            while event keys associated with a notification do not require a payload and can thus
+            be registered with a payload type of <see cref="T:EventCoalTrain.EventStructure.Unit"/>.
+            </summary>
+            <typeparam name="TPayload">The type of the event payload.</typeparam>
+        </member>
+        <member name="P:EventCoalTrain.EventStructure.EventKey`1.Name">
+            <summary>
+            Gets the name of the event key.
+            </summary>
+        </member>
+        <member name="M:EventCoalTrain.EventStructure.EventKey`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EventCoalTrain.EventStructure.EventKey`1"/> class.
+            </summary>
+            <param name="name">The name of the event key.</param>
+        </member>
+        <member name="M:EventCoalTrain.EventStructure.EventKey`1.Of(System.String)">
+            <summary>
+            Factory method that creates and registers a new event key with the specified name.
+            Throws if the name is null, whitespace, or already registered.
+            </summary>
+            <param name="name">The name of the event key.</param>
+            <returns>A new <see cref="T:EventCoalTrain.EventStructure.EventKey`1"/> instance.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if name is null or whitespace.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if the name is already registered.</exception>
+        </member>
+        <member name="M:EventCoalTrain.EventStructure.EventKey`1.ToString">
+            <summary>
+            Returns a string representation of the event key.
+            </summary>
+            <returns>A string describing the event key.</returns>
+        </member>
+        <member name="M:EventCoalTrain.EventStructure.EventKey`1.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current event key.
+            </summary>
+            <param name="obj">The object to compare with the current event key.</param>
+            <returns>True if the specified object is equal to the current event key; otherwise, false.</returns>
+        </member>
+        <member name="M:EventCoalTrain.EventStructure.EventKey`1.GetHashCode">
+            <summary>
+            Returns a hash code for the event key.
+            </summary>
+            <returns>A hash code for the event key.</returns>
+        </member>
+        <member name="T:EventCoalTrain.EventStructure.IEvent">
+            <summary>
+            Represents a generic event with a name.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventStructure.IEvent.Name">
+            <summary>
+            Gets the name of the event.
+            </summary>
+        </member>
+        <member name="T:EventCoalTrain.EventStructure.IEventKey">
+            <summary>
+            Represents a key for an event.
+            An event key is used to uniquely identify an event within the event system.
+            It contains the name of the event, which is used for subscribing and publishing events.
+            </summary>
+        </member>
+        <member name="P:EventCoalTrain.EventStructure.IEventKey.Name">
+            <summary>
+            Gets the name of the event associated with this key.
+            The name is used to identify the event when subscribing or publishing.
+            </summary>
+        </member>
+        <member name="T:EventCoalTrain.EventStructure.Unit">
+            <summary>
+            Represents a type with a single value, similar to <c>void</c> but as a struct.
+            Used to indicate the absence of a payload for event keys.
+            </summary>
+        </member>
+        <member name="F:EventCoalTrain.EventStructure.Unit.Value">
+            <summary>
+            The single value of the <see cref="T:EventCoalTrain.EventStructure.Unit"/> type.
+            </summary>
+        </member>
+    </members>
+</doc>

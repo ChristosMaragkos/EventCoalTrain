@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;netstandard2.1</TargetFrameworks>
+        <LangVersion>latestMajor</LangVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>EventCoalTrain</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Christos Maragkos</Authors>
+        <Description>Event system for Godot (.NET 9.0) and Unity (.NET Standard 2.1).</Description>
+        <RepositoryUrl>https://github.com/ChristosMaragkos/EventCoalTrain</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/ChristosMaragkos/EventCoalTrain</PackageProjectUrl>
+        <Copyright>Copyright © 2025 Christos Maragkos</Copyright>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Ensure buildTransitive props are packed so consumers get the EVENTCOALTRAIN symbol -->
+        <None Include="buildTransitive\**\*.*" Pack="true" PackagePath="buildTransitive\" />
+        <!-- Include README in the package root -->
+        <None Include="README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Core\" />
+    </ItemGroup>
+
+</Project>
