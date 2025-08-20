@@ -16,11 +16,13 @@ Supported TFMs: netstandard2.1, net8.0.
 
 ## Best practice: define record payloads and cache keys and packet descriptors
 Model your domain events with record (or record struct) payloads for clarity and immutability, then create a typed EventKey based on that record. Cache and reuse:
-- the EventKey<TPayload>
+- the EventKey<TPayload>, or EventKey<Unit> for no-payload events.
 - an optional Packet<TPayload> descriptor constructed with the key only (no payload)
 - Notification instances for no-payload events
 
-Publish by supplying a fresh payload per call. This avoids stale state while allowing you to cache what’s stable.
+Warning:
+- Don’t allocate Notification or Packet<T> inline at Publish/Subscribe call sites (e.g., `new Notification(...)` or `new Packet<T>(key, payload)` in the argument list). Instead, cache the Notification or a Packet<T> descriptor (key-only) and publish with a fresh payload per call via `Publish(descriptor, payload)` or `Publish(key, payload)`.
+- This avoids unnecessary allocations, keeps event identity stable, and prevents stale state.
 
 ```csharp
 using EventCoalTrain.EventStructure;
@@ -101,12 +103,10 @@ sub2.Dispose();
 
 ### Publishing
 ```csharp
-// Using cached descriptor + fresh payload
+// Packets: Using cached descriptor + fresh payload
 EventBus.Publish(DamageTakenPacket, new DamageTaken(5, "Trap"));
 
-// Or using key + payload
-EventBus.Publish(DamageTakenKey, new DamageTaken(3, "Fall"));
-
+// Notifications: Using the cached notification.
 EventBus.Publish(Ticked);
 ```
 
@@ -153,9 +153,9 @@ Override `DefineConstants` in your project, or add a props after package imports
 The package ships `buildTransitive/EventCoalTrain.props` with:
 ```xml
 <Project>
-    <PropertyGroup>
-        <DefineConstants>$(DefineConstants);EVENTCOALTRAIN</DefineConstants>
-    </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);EVENTCOALTRAIN</DefineConstants>
+  </PropertyGroup>
 </Project>
 ```
 
