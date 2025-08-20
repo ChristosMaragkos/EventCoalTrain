@@ -20,4 +20,9 @@
         <Using Include="Xunit"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <!-- Reference the library under test -->
+        <ProjectReference Include="..\..\Core\EventCoalTrain.csproj" />
+    </ItemGroup>
+
 </Project>

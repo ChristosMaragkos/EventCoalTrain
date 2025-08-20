@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O4oyEdt9QBE=",
+  "dgSpecHash": "3SOOzBd4U5Y=",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\RiderProjects\\EventCoalTrain\\Tests\\EventCoalTrain.Tests\\EventCoalTrain.Tests.csproj",
   "expectedPackageFiles": [
@@ -93,6 +93,7 @@
     "C:\\Users\\chris\\.nuget\\packages\\xunit.extensibility.core\\2.5.3\\xunit.extensibility.core.2.5.3.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\eventcoaltrain\\1.0.0\\eventcoaltrain.1.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"

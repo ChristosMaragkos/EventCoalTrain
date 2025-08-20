@@ -21,13 +21,16 @@ jobs:
             8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore EventCoalTrain.sln
 
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+      - name: Build (Core only)
+        run: dotnet build Core/EventCoalTrain.csproj --configuration Release --no-restore
 
-      - name: Pack
-        run: dotnet pack --configuration Release --no-build --output ./nupkg
+      - name: Test (xUnit project)
+        run: dotnet test Tests/EventCoalTrain.Tests/EventCoalTrain.Tests.csproj --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
+
+      - name: Pack (Core only)
+        run: dotnet pack Core/EventCoalTrain.csproj --configuration Release --no-build --output ./nupkg
 
       - name: Publish to NuGet.org
         run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
@@ -38,3 +41,10 @@ jobs:
           files: ./nupkg/*.nupkg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: '**/TestResults/*.trx'

@@ -5,9 +5,9 @@
         <LangVersion>latestMajor</LangVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>EventCoalTrain</PackageId>
-        <Version>1.0.0</Version>
+        <Version>2.0.0</Version>
         <Authors>Christos Maragkos</Authors>
-        <Description>Event system for Godot (.NET 9.0) and Unity (.NET Standard 2.1).</Description>
+        <Description>Event system for Godot (.NET 8.0) and Unity (.NET Standard 2.1).</Description>
         <RepositoryUrl>https://github.com/ChristosMaragkos/EventCoalTrain</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/ChristosMaragkos/EventCoalTrain</PackageProjectUrl>

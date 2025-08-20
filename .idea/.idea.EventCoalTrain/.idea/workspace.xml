@@ -9,7 +9,156 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="" />
+    <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusErrorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusNotificationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusPayloadTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventKeyTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/SnapshotBehaviorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_EventCoalTrain.Tests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/testhost.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/testhost.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.assert.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.execution.dotnet.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoa.9B99A6E6.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/ref/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/refint/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/EventCoalTrain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventCoalTrain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventCoalTrain.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EventCoalTrain.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventCoalTrain.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventCoalTrain.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventCoalTrain.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventCoalTrain.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +188,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56fad711d44d4d47bc9f3128de5ae30ac90920/b3/7352f995/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/EventHandling/DefaultEventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/EventHandling/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/EventHandling/IEventBus.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,14 +197,18 @@
     <setting file="file://$PROJECT_DIR$/Core/EventStructure/EventKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/EventStructure/IEventKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/EventStructure/Unit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusErrorTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusNotificationTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusPayloadTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventKeyTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/SnapshotBehaviorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net/.NETFramework,Version=v0.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -65,29 +219,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.EventCoalTrain.executor": "Run",
-    ".NET Project.EventOasth.Tests.executor": "Run",
-    ".NET Project.EventOasth.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "c448087c-e500-4218-b54b-4c012e25b85d.executor": "Debug",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.EventCoalTrain.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.EventOasth.Tests.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.EventOasth.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;c448087c-e500-4218-b54b-4c012e25b85d.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected=".NET Project.EventCoalTrain">
     <configuration name="EventCoalTrain" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -129,6 +284,7 @@
       <workItem from="1751208750631" duration="4606000" />
       <workItem from="1755372488263" duration="831000" />
       <workItem from="1755629387160" duration="7000000" />
+      <workItem from="1755689281107" duration="1898000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
@@ -178,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751215624046</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update assembly informational version and add README documentation">
+      <option name="closed" value="true" />
+      <created>1755678674046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755678674046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +369,8 @@
     <MESSAGE value="Refactor EventBus to use collection initializers and update assembly information" />
     <MESSAGE value="Add initial project configuration files and XML documentation" />
     <MESSAGE value="Update assembly informational version and adjust project file paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update assembly informational version and adjust project file paths" />
+    <MESSAGE value="Update assembly informational version and add README documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update assembly informational version and add README documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

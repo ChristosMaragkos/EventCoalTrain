@@ -1,0 +1,12 @@
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\bin\Debug\netstandard2.1\EventCoalTrain.deps.json
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\bin\Debug\netstandard2.1\EventCoalTrain.dll
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\bin\Debug\netstandard2.1\EventCoalTrain.pdb
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\bin\Debug\netstandard2.1\EventCoalTrain.xml
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.AssemblyInfoInputs.cache
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.AssemblyInfo.cs
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.csproj.CoreCompileInputs.cache
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.sourcelink.json
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.dll
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.xml
+C:\Users\chris\RiderProjects\EventCoalTrain\Core\obj\Debug\netstandard2.1\EventCoalTrain.pdb
