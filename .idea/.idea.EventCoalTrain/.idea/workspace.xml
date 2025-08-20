@@ -11,14 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/EventCoalTrain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventCoalTrain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Core/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +142,7 @@
       <workItem from="1755372488263" duration="831000" />
       <workItem from="1755629387160" duration="7000000" />
       <workItem from="1755689281107" duration="2599000" />
-      <workItem from="1755714481620" duration="6416000" />
+      <workItem from="1755714481620" duration="7413000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
