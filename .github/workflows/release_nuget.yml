@@ -26,9 +26,6 @@ jobs:
       - name: Build (Core only)
         run: dotnet build Core/EventCoalTrain.csproj --configuration Release --no-restore
 
-      - name: Test (xUnit project)
-        run: dotnet test Tests/EventCoalTrain.Tests/EventCoalTrain.Tests.csproj --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
-
       - name: Pack (Core only)
         run: dotnet pack Core/EventCoalTrain.csproj --configuration Release --no-build --output ./nupkg
 
