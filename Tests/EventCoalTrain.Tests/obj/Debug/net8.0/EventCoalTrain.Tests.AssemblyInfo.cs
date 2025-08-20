@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventCoalTrain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37960c4c3c63e511f5f642c5c3e1db2e64d50cfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+414a9af42b9199b8dd5b006ce4cdaa9bd908ff6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventCoalTrain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventCoalTrain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
