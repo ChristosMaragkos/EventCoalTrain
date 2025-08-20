@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2025 Christos Maragkos")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Event system for Godot (.NET 8.0) and Unity (.NET Standard 2.1).")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+5a2aaca411374e5b725a4a0b34bda88494ec6b84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+7c12c18d7e8efa1f5fc7cfffed7b9d89db17ebfd")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventCoalTrain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventCoalTrain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]

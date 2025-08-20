@@ -25,19 +25,5 @@ public class EventBusNotificationTests
         Assert.True(EventBus.HasSubscribers(_key));
         Assert.Equal(1, EventBus.Count(_key));
     }
-
-    [Fact]
-    public void Legacy_static_Subscribe_and_Unsubscribe_notification_work()
-    {
-        var called = 0;
-        Action handler = () => called++;
-        EventBus.Subscribe(Notification, handler);
-
-        EventBus.Publish(Notification);
-        Assert.Equal(1, called);
-
-        EventBus.Unsubscribe(Notification, handler);
-        Assert.False(EventBus.HasSubscribers(_key));
-    }
 }
 

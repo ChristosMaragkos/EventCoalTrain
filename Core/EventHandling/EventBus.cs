@@ -39,20 +39,14 @@ public static class EventBus
 
     // Subscribe (legacy shape using Packet/Notification)
     public static void Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
-        => _bus.Subscribe(packet.Key, handler);
+        => _bus.Subscribe(packet, handler);
 
     public static void Subscribe(Notification notification, Action handler)
         => _bus.Subscribe(notification, handler);
 
-    // Unsubscribe (legacy shape)
-    public static void Unsubscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
-        => _bus.Unsubscribe(packet.Key, handler);
-
-    public static void Unsubscribe(Notification notification, Action handler)
-        => _bus.Unsubscribe(notification, handler);
-
     // Publish
-    public static void Publish<TPayload>(Packet<TPayload> packet) => _bus.Publish(packet);
+    public static void Publish<TPayload>(Packet<TPayload> packet, TPayload payload) => 
+        _bus.Publish(packet, payload);
     public static void Publish(Notification notification) => _bus.Publish(notification);
 
     // Bulk operations

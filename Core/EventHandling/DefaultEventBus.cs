@@ -13,22 +13,22 @@ internal sealed class DefaultEventBus : IEventBus
 
     public event Action<Exception, IEventKey, Delegate>? OnPublishError;
 
-    public IDisposable Subscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
+    public IDisposable Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
     {
-        if (key is null) throw new ArgumentNullException(nameof(key));
+        if (packet is null) throw new ArgumentNullException(nameof(packet));
         if (handler is null) throw new ArgumentNullException(nameof(handler));
 
         lock (_gate)
         {
-            if (!_subscribers.TryGetValue(key, out var list))
+            if (!_subscribers.TryGetValue(packet.Key, out var list))
             {
                 list = new List<Delegate>();
-                _subscribers[key] = list;
+                _subscribers[packet.Key] = list;
             }
             list.Add(handler);
         }
 
-        return new Unsubscriber(() => Unsubscribe(key, handler));
+        return new Unsubscriber(() => Unsubscribe(packet.Key, handler));
     }
 
     public IDisposable Subscribe(Notification notification, Action handler)
@@ -48,7 +48,7 @@ internal sealed class DefaultEventBus : IEventBus
 
         return new Unsubscriber(() => Unsubscribe(notification, handler));
     }
-
+    
     public void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
     {
         lock (_gate)
@@ -75,29 +75,31 @@ internal sealed class DefaultEventBus : IEventBus
             }
         }
     }
-
-    public void Publish<TPayload>(Packet<TPayload> packet)
+    
+    public void Publish<TPayload>(Packet<TPayload> packet, TPayload payload)
     {
         if (packet is null) throw new ArgumentNullException(nameof(packet));
-
+        if (payload is null) throw new ArgumentNullException(nameof(payload));
+        
+        var key = packet.Key;
         List<Delegate>? snapshot;
         lock (_gate)
         {
-            _subscribers.TryGetValue(packet.Key, out var list);
+            _subscribers.TryGetValue(key, out var list);
             snapshot = list is null ? null : [..list];
         }
         if (snapshot is null || snapshot.Count == 0) return;
-
-        foreach (var del in snapshot)
+        
+        foreach (var d in snapshot)
         {
-            if (del is not Action<TPayload> action) continue;
+            if (d is not Action<TPayload> action) continue;
             try
             {
-                action(packet.Payload);
+                action(payload);
             }
             catch (Exception ex)
             {
-                OnPublishError?.Invoke(ex, packet.Key, del);
+                OnPublishError?.Invoke(ex, key, d);
             }
         }
     }

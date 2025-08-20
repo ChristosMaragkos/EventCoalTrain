@@ -14,20 +14,28 @@ Supported TFMs: netstandard2.1, net8.0.
 - Static EventBus wrapper and an IEventBus interface with IDisposable subscriptions
 - Global preprocessor symbol for consumers: EVENTCOALTRAIN
 
-## Best practice: define record payloads and cache your keys
-Model your domain events with record payloads for clarity and immutability, then create a typed EventKey based on that record. Cache and reuse the EventKey (and Notification instances). Don’t cache Packets (they carry per-call payloads).
+## Best practice: define record payloads and cache keys and packet descriptors
+Model your domain events with record (or record struct) payloads for clarity and immutability, then create a typed EventKey based on that record. Cache and reuse:
+- the EventKey<TPayload>
+- an optional Packet<TPayload> descriptor constructed with the key only (no payload)
+- Notification instances for no-payload events
+
+Publish by supplying a fresh payload per call. This avoids stale state while allowing you to cache what’s stable.
 
 ```csharp
 using EventCoalTrain.EventStructure;
 using EventCoalTrain.EventSource;
 
-// 1) Define the payload as a record
+// 1) Define the payload as a record/record struct
 public readonly record struct ScoreIncreased(int Amount, string Source);
 
 public static class Events
 {
     // 2) Define and cache the event key typed on the payload record
     public static readonly EventKey<ScoreIncreased> ScoreIncreasedKey = EventKey<ScoreIncreased>.Of("ScoreIncreased");
+
+    // 3) Optionally cache a packet descriptor (key only)
+    public static readonly Packet<ScoreIncreased> ScoreIncreased = new Packet<ScoreIncreased>(ScoreIncreasedKey);
 
     // Notification-style event (no payload). Cache both key and notification instance.
     public static readonly EventKey<Unit> ButtonClickedKey = EventKey<Unit>.Of("ButtonClicked");
@@ -36,7 +44,7 @@ public static class Events
 ```
 
 - Subscribe using the cached keys/notifications via EventBus.Instance.
-- Publish by creating a Packet with a fresh payload instance each time.
+- Publish using either the cached packet descriptor or the key directly with a fresh payload instance each time.
 
 ## Quick start
 ```csharp
@@ -48,9 +56,14 @@ using EventCoalTrain.EventHandling;
 var subScore = EventBus.Instance.Subscribe(Events.ScoreIncreasedKey, e => Console.WriteLine($"+{e.Amount} ({e.Source})"));
 var subClick = EventBus.Instance.Subscribe(Events.ButtonClicked, () => Console.WriteLine("clicked"));
 
-// Publish (3) Define a packet per publish with the record payload
-EventBus.Publish(new Packet<ScoreIncreased>(Events.ScoreIncreasedKey, new ScoreIncreased(10, "LevelComplete")));
-EventBus.Publish(Events.ButtonClicked); // reuse cached notification
+// Publish with a cached packet descriptor + fresh payload
+EventBus.Publish(Events.ScoreIncreased, new ScoreIncreased(10, "LevelComplete"));
+
+// Or publish with key + payload
+EventBus.Publish(Events.ScoreIncreasedKey, new ScoreIncreased(5, "Combo"));
+
+// Notification publish reuses cached notification
+EventBus.Publish(Events.ButtonClicked);
 
 // Unsubscribe via disposables
 subScore.Dispose();
@@ -58,17 +71,18 @@ subClick.Dispose();
 ```
 
 Notes:
-- Cache and reuse EventKey<T> and Notification instances. Don’t create new ones ad hoc, and don’t cache Packets.
+- Cache and reuse EventKey<T> and optional Packet<T> descriptors; supply a new payload per publish. This is allocation-light (especially with record structs) and thread-safe.
 - Prefer EventBus.Instance for subscriptions to get IDisposable handles.
-- The static wrapper methods exist for convenience/back-compat; the instance API is recommended.
+- The static wrapper methods exist for convenience/back-compat; the instance API is recommended for lifecycle management.
 
 ## API overview
 
-### Event keys and payload records
+### Event keys, packet descriptors, and payload records
 ```csharp
 public readonly record struct DamageTaken(int Amount, string Cause);
 
 var DamageTakenKey = EventKey<DamageTaken>.Of("DamageTaken");
+var DamageTakenPacket = new Packet<DamageTaken>(DamageTakenKey); // descriptor
 var TickedKey = EventKey<Unit>.Of("Ticked");
 var Ticked = new Notification(TickedKey);
 ```
@@ -87,7 +101,12 @@ sub2.Dispose();
 
 ### Publishing
 ```csharp
-EventBus.Publish(new Packet<DamageTaken>(DamageTakenKey, new DamageTaken(5, "Trap")));
+// Using cached descriptor + fresh payload
+EventBus.Publish(DamageTakenPacket, new DamageTaken(5, "Trap"));
+
+// Or using key + payload
+EventBus.Publish(DamageTakenKey, new DamageTaken(3, "Fall"));
+
 EventBus.Publish(Ticked);
 ```
 
@@ -134,9 +153,9 @@ Override `DefineConstants` in your project, or add a props after package imports
 The package ships `buildTransitive/EventCoalTrain.props` with:
 ```xml
 <Project>
-  <PropertyGroup>
-    <DefineConstants>$(DefineConstants);EVENTCOALTRAIN</DefineConstants>
-  </PropertyGroup>
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);EVENTCOALTRAIN</DefineConstants>
+    </PropertyGroup>
 </Project>
 ```
 

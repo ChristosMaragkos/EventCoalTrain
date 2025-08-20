@@ -10,6 +10,7 @@ public class SnapshotBehaviorTests
     public void Subscribing_during_publish_does_not_affect_current_dispatch()
     {
         var key = EventKey<int>.Of($"Snap_{Guid.NewGuid()}");
+        var packet = new Packet<int>(key);
         var aCalls = 0;
         var bCalls = 0;
 
@@ -18,22 +19,20 @@ public class SnapshotBehaviorTests
         {
             Interlocked.Increment(ref aCalls);
             // Subscribe B during A's first call
-            if (b == null)
-            {
-                b = _ => Interlocked.Increment(ref bCalls);
-                EventBus.Instance.Subscribe(key, b);
-            }
+            if (b != null) return;
+            b = _ => Interlocked.Increment(ref bCalls);
+            EventBus.Instance.Subscribe(packet, b);
         };
 
-        using var subA = EventBus.Instance.Subscribe(key, a);
+        using var subA = EventBus.Instance.Subscribe(packet, a);
 
         // First publish: A runs, B gets subscribed, but shouldn't run this time
-        EventBus.Publish(new Packet<int>(key, 1));
+        EventBus.Publish(packet, 1);
         Assert.Equal(1, aCalls);
         Assert.Equal(0, bCalls);
 
         // Second publish: both A and B should run
-        EventBus.Publish(new Packet<int>(key, 2));
+        EventBus.Publish(packet, 2);
         Assert.Equal(2, aCalls);
         Assert.Equal(1, bCalls);
     }
@@ -62,7 +61,7 @@ public class SnapshotBehaviorTests
         {
             Interlocked.Increment(ref calls);
             // Remove this handler during its first invocation
-            removeSelf?.Invoke();
+            removeSelf.Invoke();
         }
     }
 }

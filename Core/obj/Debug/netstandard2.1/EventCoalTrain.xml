@@ -29,6 +29,9 @@
             Raised when a subscriber throws during publish.
             </summary>
         </member>
+        <member name="E:EventCoalTrain.EventHandling.IEventBus.OnPublishError">
+            Error callback on publish exceptions
+        </member>
         <member name="T:EventCoalTrain.EventSource.Notification">
             <summary>
             Represents a notification event with a specific key.
@@ -67,22 +70,17 @@
             Gets the event key associated with this packet.
             </summary>
         </member>
-        <member name="P:EventCoalTrain.EventSource.Packet`1.Payload">
-            <summary>
-            Gets the payload carried by this packet.
-            </summary>
-        </member>
         <member name="P:EventCoalTrain.EventSource.Packet`1.Name">
             <summary>
             Gets the name of the event from the key.
             </summary>
         </member>
-        <member name="M:EventCoalTrain.EventSource.Packet`1.#ctor(EventCoalTrain.EventStructure.EventKey{`0},`0)">
+        <member name="M:EventCoalTrain.EventSource.Packet`1.#ctor(EventCoalTrain.EventStructure.EventKey{`0})">
             <summary>
-            Initializes a new instance of the <see cref="T:EventCoalTrain.EventSource.Packet`1"/> class.
+            Initializes a new descriptor-like instance of the <see cref="T:EventCoalTrain.EventSource.Packet`1"/> class that only carries the key.
+            Use <c>EventBus.Publish(packet, payload)</c> to publish with a fresh payload per call.
             </summary>
             <param name="key">The event key.</param>
-            <param name="payload">The payload to associate with the key.</param>
         </member>
         <member name="T:EventCoalTrain.EventStructure.EventKey`1">
             <summary>

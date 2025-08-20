@@ -10,7 +10,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/EventHandling/DefaultEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventHandling/DefaultEventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/EventHandling/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventHandling/EventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/EventHandling/IEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventHandling/IEventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/EventSource/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/EventSource/Packet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Core/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/netstandard2.1/EventCoalTrain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/EventCoalTrain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/EventCoalTrain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusErrorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusErrorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusNotificationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusNotificationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusPayloadTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusPayloadTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/PacketDescriptorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/PacketDescriptorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/SnapshotBehaviorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/SnapshotBehaviorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/bin/Debug/net8.0/EventCoalTrain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/ref/EventCoalTrain.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/ref/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/refint/EventCoalTrain.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/refint/EventCoalTrain.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +112,7 @@
     <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusNotificationTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventBusPayloadTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/EventKeyTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/PacketDescriptorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/EventCoalTrain.Tests/SnapshotBehaviorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/bin/Debug/netstandard2.1/EventCoalTrain.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net/.NETFramework,Version=v0.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,7 +120,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -137,7 +196,8 @@
       <workItem from="1751208750631" duration="4606000" />
       <workItem from="1755372488263" duration="831000" />
       <workItem from="1755629387160" duration="7000000" />
-      <workItem from="1755689281107" duration="2285000" />
+      <workItem from="1755689281107" duration="2599000" />
+      <workItem from="1755714481620" duration="4537000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />

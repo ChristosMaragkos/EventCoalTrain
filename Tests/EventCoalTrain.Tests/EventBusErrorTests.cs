@@ -6,8 +6,10 @@ namespace EventCoalTrain.Tests;
 
 public class EventBusErrorTests
 {
-    private readonly EventKey<int> _key = EventKey<int>.Of($"Err_{Guid.NewGuid()}");
+    private static readonly EventKey<int> Key = EventKey<int>.Of($"Err_{Guid.NewGuid()}");
 
+    private static readonly Packet<int> IntegerPacket = new(Key);
+    
     public EventBusErrorTests()
     {
         EventBus.Clear();
@@ -34,13 +36,13 @@ public class EventBusErrorTests
             void Throws(int _) => throw new InvalidOperationException("boom");
             void Ok(int _) => Interlocked.Increment(ref okCount);
 
-            using var s1 = EventBus.Instance.Subscribe(_key, Throws);
-            using var s2 = EventBus.Instance.Subscribe(_key, Ok);
+            using var s1 = EventBus.Instance.Subscribe(IntegerPacket, Throws);
+            using var s2 = EventBus.Instance.Subscribe(IntegerPacket, Ok);
 
-            EventBus.Publish(new Packet<int>(_key, 42));
+            EventBus.Publish(IntegerPacket, 42);
 
             Assert.IsType<InvalidOperationException>(captured);
-            Assert.Equal(_key.Name, capturedKey!.Name);
+            Assert.Equal(Key.Name, capturedKey!.Name);
             Assert.NotNull(capturedDelegate);
             Assert.Equal(1, okCount); // other handler still ran
         }

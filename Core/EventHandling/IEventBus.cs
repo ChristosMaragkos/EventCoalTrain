@@ -7,15 +7,11 @@ namespace EventCoalTrain.EventHandling;
 public interface IEventBus
 {
     // Subscribe (disposable patterns)
-    IDisposable Subscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler);
+    IDisposable Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler);
     IDisposable Subscribe(Notification notification, Action handler);
 
-    // Legacy-shaped operations (void-based)
-    void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler);
-    void Unsubscribe(Notification notification, Action handler);
-
     // Publish
-    void Publish<TPayload>(Packet<TPayload> packet);
+    void Publish<TPayload>(Packet<TPayload> packet, TPayload payload);
     void Publish(Notification notification);
 
     // Bulk ops / queries
@@ -24,6 +20,6 @@ public interface IEventBus
     int Count(IEventKey key);
     void Clear();
 
-    // Error callback on publish exceptions
-    event Action<Exception, IEventKey, Delegate>? OnPublishError;
+    /// Error callback on publish exceptions
+    event Action<Exception, IEventKey, Delegate> OnPublishError;
 }

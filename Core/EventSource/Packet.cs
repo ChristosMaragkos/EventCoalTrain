@@ -17,23 +17,19 @@ public class Packet<TPayload> : IEvent
     public EventKey<TPayload> Key { get; }
 
     /// <summary>
-    /// Gets the payload carried by this packet.
-    /// </summary>
-    public TPayload Payload { get; }
-    
-    /// <summary>
     /// Gets the name of the event from the key.
     /// </summary>
     public string Name => Key.Name;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Packet{TPayload}"/> class.
+    /// Initializes a new descriptor-like instance of the <see cref="Packet{TPayload}"/> class that only carries the key.
+    /// Use <c>EventBus.Publish(packet, payload)</c> to publish with a fresh payload per call.
     /// </summary>
     /// <param name="key">The event key.</param>
-    /// <param name="payload">The payload to associate with the key.</param>
-    public Packet(EventKey<TPayload> key, TPayload payload)
+    public Packet(EventKey<TPayload> key)
     {
         Key = key;
-        Payload = payload;
+        // Payload intentionally left at default; use Publish(packet, payload) overload for sending data.
+        // This enables safely caching packets as descriptors.
     }
 }
