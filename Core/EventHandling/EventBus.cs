@@ -37,6 +37,11 @@ namespace EventCoalTrain.EventHandling
             add => _bus.OnPublishError += value;
             remove => _bus.OnPublishError -= value;
         }
+        
+        public static void Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
+            => _bus.Subscribe(packet, handler);
+        public static void Subscribe(Notification notification, Action handler)
+            => _bus.Subscribe(notification, handler);
     
         // Publish
         public static void Publish<TPayload>(Packet<TPayload> packet, TPayload payload) => 

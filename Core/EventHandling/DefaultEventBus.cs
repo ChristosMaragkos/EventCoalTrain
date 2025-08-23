@@ -53,20 +53,18 @@ namespace EventCoalTrain.EventHandling
             return new Unsubscriber(() => Unsubscribe(notification, handler));
         }
 
-        public void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
+        private void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
         {
             lock (_gate)
             {
-                if (_subscribers.TryGetValue(key, out var list))
-                {
-                    list.Remove(handler);
-                    if (list.Count == 0)
-                        _subscribers.Remove(key);
-                }
+                if (!_subscribers.TryGetValue(key, out var list)) return;
+                list.Remove(handler);
+                if (list.Count == 0)
+                    _subscribers.Remove(key);
             }
         }
 
-        public void Unsubscribe(Notification notification, Action handler)
+        private void Unsubscribe(Notification notification, Action handler)
         {
             lock (_gate)
             {
