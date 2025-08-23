@@ -9,6 +9,6 @@
         /// <summary>
         /// The single value of the <see cref="Unit"/> type.
         /// </summary>
-        public static readonly Unit Value = new();
+        public static readonly Unit Value = new Unit();
     }
 }

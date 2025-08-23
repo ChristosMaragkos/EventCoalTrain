@@ -16,7 +16,7 @@ namespace EventCoalTrain.EventHandling
         /// <summary>
         /// Contains all registered event key names (used by EventKey.Of for uniqueness).
         /// </summary>
-        public static readonly HashSet<string> RegisteredKeys = new();
+        public static readonly HashSet<string> RegisteredKeys = new HashSet<string>();
 
         /// <summary>
         /// Access the underlying event bus instance (supports IDisposable subscriptions).
