@@ -10,9 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3026904-8e56-4861-bea2-a3f9ad1e3177" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/release_nuget_dryrun.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release_nuget.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventCoalTrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/netstandard2.1/EventCoalTrain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/EventCoalTrain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/EventCoalTrain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/Debug/net8.0/EventCoalTrain.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/EventCoalTrain.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/EventCoalTrain.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +113,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.EventCoalTrain">
+  <component name="RunManager">
     <configuration name="EventCoalTrain" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -141,7 +156,9 @@
       <workItem from="1755372488263" duration="831000" />
       <workItem from="1755629387160" duration="7000000" />
       <workItem from="1755689281107" duration="2599000" />
-      <workItem from="1755714481620" duration="8075000" />
+      <workItem from="1755714481620" duration="8536000" />
+      <workItem from="1755899541386" duration="463000" />
+      <workItem from="1755954157119" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project configuration files and .gitignore">
       <option name="closed" value="true" />

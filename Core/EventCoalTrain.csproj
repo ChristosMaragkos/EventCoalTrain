@@ -2,10 +2,9 @@
 
     <PropertyGroup>
         <TargetFrameworks>net8.0;netstandard2.1</TargetFrameworks>
-        <LangVersion>latestMajor</LangVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>EventCoalTrain</PackageId>
-        <Version>2.0.1</Version>
+        <Version>2.0.2</Version>
         <Authors>Christos Maragkos</Authors>
         <Description>Event system for Godot (.NET 8.0) and Unity (.NET Standard 2.1).</Description>
         <RepositoryUrl>https://github.com/ChristosMaragkos/EventCoalTrain</RepositoryUrl>

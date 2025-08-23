@@ -1,12 +1,13 @@
-﻿namespace EventCoalTrain.EventStructure;
-
-/// <summary>
-/// Represents a generic event with a name.
-/// </summary>
-public interface IEvent
+﻿namespace EventCoalTrain.EventStructure
 {
     /// <summary>
-    /// Gets the name of the event.
+    /// Represents a generic event with a name.
     /// </summary>
-    string Name { get; }
+    public interface IEvent
+    {
+        /// <summary>
+        /// Gets the name of the event.
+        /// </summary>
+        string Name { get; }
+    }
 }

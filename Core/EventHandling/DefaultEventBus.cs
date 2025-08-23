@@ -4,126 +4,103 @@ using System.Collections.Generic;
 using EventCoalTrain.EventSource;
 using EventCoalTrain.EventStructure;
 
-namespace EventCoalTrain.EventHandling;
-
-internal sealed class DefaultEventBus : IEventBus
+namespace EventCoalTrain.EventHandling
 {
-    private readonly object _gate = new();
-    private readonly Dictionary<IEventKey, List<Delegate>> _subscribers = new();
-
-    public event Action<Exception, IEventKey, Delegate>? OnPublishError;
-
-    public IDisposable Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
+    internal sealed class DefaultEventBus : IEventBus
     {
-        if (packet is null) throw new ArgumentNullException(nameof(packet));
-        if (handler is null) throw new ArgumentNullException(nameof(handler));
+        private readonly object _gate = new object();
 
-        lock (_gate)
+        private readonly Dictionary<IEventKey, List<Delegate>> _subscribers =
+            new Dictionary<IEventKey, List<Delegate>>();
+
+        public event Action<Exception, IEventKey, Delegate>? OnPublishError;
+
+        public IDisposable Subscribe<TPayload>(Packet<TPayload> packet, Action<TPayload> handler)
         {
-            if (!_subscribers.TryGetValue(packet.Key, out var list))
+            if (packet is null) throw new ArgumentNullException(nameof(packet));
+            if (handler is null) throw new ArgumentNullException(nameof(handler));
+
+            lock (_gate)
             {
-                list = new List<Delegate>();
-                _subscribers[packet.Key] = list;
+                if (!_subscribers.TryGetValue(packet.Key, out var list))
+                {
+                    list = new List<Delegate>();
+                    _subscribers[packet.Key] = list;
+                }
+
+                list.Add(handler);
             }
-            list.Add(handler);
+
+            return new Unsubscriber(() => Unsubscribe(packet.Key, handler));
         }
 
-        return new Unsubscriber(() => Unsubscribe(packet.Key, handler));
-    }
-
-    public IDisposable Subscribe(Notification notification, Action handler)
-    {
-        if (notification is null) throw new ArgumentNullException(nameof(notification));
-        if (handler is null) throw new ArgumentNullException(nameof(handler));
-
-        lock (_gate)
+        public IDisposable Subscribe(Notification notification, Action handler)
         {
-            if (!_subscribers.TryGetValue(notification.Key, out var list))
+            if (notification is null) throw new ArgumentNullException(nameof(notification));
+            if (handler is null) throw new ArgumentNullException(nameof(handler));
+
+            lock (_gate)
             {
-                list = new List<Delegate>();
-                _subscribers[notification.Key] = list;
+                if (!_subscribers.TryGetValue(notification.Key, out var list))
+                {
+                    list = new List<Delegate>();
+                    _subscribers[notification.Key] = list;
+                }
+
+                list.Add(handler);
             }
-            list.Add(handler);
+
+            return new Unsubscriber(() => Unsubscribe(notification, handler));
         }
 
-        return new Unsubscriber(() => Unsubscribe(notification, handler));
-    }
-    
-    public void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
-    {
-        lock (_gate)
+        public void Unsubscribe<TPayload>(EventKey<TPayload> key, Action<TPayload> handler)
         {
-            if (_subscribers.TryGetValue(key, out var list))
+            lock (_gate)
             {
-                list.Remove(handler);
-                if (list.Count == 0)
-                    _subscribers.Remove(key);
-            }
-        }
-    }
-
-    public void Unsubscribe(Notification notification, Action handler)
-    {
-        lock (_gate)
-        {
-            var key = notification.Key;
-            if (_subscribers.TryGetValue(key, out var list))
-            {
-                list.Remove(handler);
-                if (list.Count == 0)
-                    _subscribers.Remove(key);
+                if (_subscribers.TryGetValue(key, out var list))
+                {
+                    list.Remove(handler);
+                    if (list.Count == 0)
+                        _subscribers.Remove(key);
+                }
             }
         }
-    }
-    
-    public void Publish<TPayload>(Packet<TPayload> packet, TPayload payload)
-    {
-        if (packet is null) throw new ArgumentNullException(nameof(packet));
-        if (payload is null) throw new ArgumentNullException(nameof(payload));
-        
-        var key = packet.Key;
-        List<Delegate>? snapshot;
-        lock (_gate)
+
+        public void Unsubscribe(Notification notification, Action handler)
         {
-            _subscribers.TryGetValue(key, out var list);
-            snapshot = list is null ? null : [..list];
-        }
-        if (snapshot is null || snapshot.Count == 0) return;
-        
-        foreach (var d in snapshot)
-        {
-            if (d is not Action<TPayload> action) continue;
-            try
+            lock (_gate)
             {
-                action(payload);
-            }
-            catch (Exception ex)
-            {
-                OnPublishError?.Invoke(ex, key, d);
+                var key = notification.Key;
+                if (_subscribers.TryGetValue(key, out var list))
+                {
+                    list.Remove(handler);
+                    if (list.Count == 0)
+                        _subscribers.Remove(key);
+                }
             }
         }
-    }
 
-    public void Publish(Notification notification)
-    {
-        if (notification is null) throw new ArgumentNullException(nameof(notification));
-
-        var key = notification.Key;
-        List<Delegate>? snapshot;
-        lock (_gate)
+        public void Publish<TPayload>(Packet<TPayload> packet, TPayload payload)
         {
-            _subscribers.TryGetValue(key, out var list);
-            snapshot = list is null ? null : [..list];
-        }
-        if (snapshot is null || snapshot.Count == 0) return;
+            if (packet is null) throw new ArgumentNullException(nameof(packet));
+            if (payload is null) throw new ArgumentNullException(nameof(payload));
 
-        foreach (var d in snapshot)
-        {
-            if (d is Action action)
+            var key = packet.Key;
+            List<Delegate>? snapshot;
+            lock (_gate)
             {
+                _subscribers.TryGetValue(key, out var list);
+                snapshot = list is null ? null : new List<Delegate>(list);
+            }
+
+            if (snapshot is null || snapshot.Count == 0) return;
+
+            foreach (var d in snapshot)
+            {
+                if (!(d is Action<TPayload> action)) continue;
                 try
                 {
-                    action();
+                    action(payload);
                 }
                 catch (Exception ex)
                 {
@@ -131,45 +108,78 @@ internal sealed class DefaultEventBus : IEventBus
                 }
             }
         }
-    }
 
-    public void UnsubscribeAll(IEventKey key)
-    {
-        lock (_gate)
+        public void Publish(Notification notification)
         {
-            _subscribers.Remove(key);
-        }
-    }
+            if (notification is null) throw new ArgumentNullException(nameof(notification));
 
-    public bool HasSubscribers(IEventKey key)
-    {
-        lock (_gate)
+            var key = notification.Key;
+            List<Delegate>? snapshot;
+            lock (_gate)
+            {
+                _subscribers.TryGetValue(key, out var list);
+                snapshot = list is null ? null : new List<Delegate>(list);
+            }
+
+            if (snapshot is null || snapshot.Count == 0) return;
+
+            foreach (var d in snapshot)
+                if (d is Action action)
+                    try
+                    {
+                        action();
+                    }
+                    catch (Exception ex)
+                    {
+                        OnPublishError?.Invoke(ex, key, d);
+                    }
+        }
+
+        public void UnsubscribeAll(IEventKey key)
         {
-            return _subscribers.TryGetValue(key, out var list) && list.Count > 0;
+            lock (_gate)
+            {
+                _subscribers.Remove(key);
+            }
         }
-    }
 
-    public int Count(IEventKey key)
-    {
-        lock (_gate)
+        public bool HasSubscribers(IEventKey key)
         {
-            return _subscribers.TryGetValue(key, out var list) ? list.Count : 0;
+            lock (_gate)
+            {
+                return _subscribers.TryGetValue(key, out var list) && list.Count > 0;
+            }
         }
-    }
 
-    public void Clear()
-    {
-        lock (_gate)
+        public int Count(IEventKey key)
         {
-            _subscribers.Clear();
+            lock (_gate)
+            {
+                return _subscribers.TryGetValue(key, out var list) ? list.Count : 0;
+            }
         }
-    }
 
-    private sealed class Unsubscriber : IDisposable
-    {
-        private Action? _dispose;
-        public Unsubscriber(Action dispose) => _dispose = dispose;
-        public void Dispose() => System.Threading.Interlocked.Exchange(ref _dispose, null)?.Invoke();
+        public void Clear()
+        {
+            lock (_gate)
+            {
+                _subscribers.Clear();
+            }
+        }
+
+        private sealed class Unsubscriber : IDisposable
+        {
+            private Action? _dispose;
+
+            public Unsubscriber(Action dispose)
+            {
+                _dispose = dispose;
+            }
+
+            public void Dispose()
+            {
+                System.Threading.Interlocked.Exchange(ref _dispose, null)?.Invoke();
+            }
+        }
     }
 }
-
